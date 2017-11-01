@@ -264,7 +264,7 @@ let defaultOptions = {
     cloudName: 'AzureCloud',
     outputFormat: 'files',
     deploy: false,
-    templateBaseUri: 'https://raw.githubusercontent.com/mspnp/template-building-blocks/master/templates'
+    templateBaseUri: 'https://raw.githubusercontent.com/mspnp/template-building-blocks/v2.0.1/templates'
 };
 
 let getCloud = ({name}) => {
@@ -425,7 +425,7 @@ try {
     commander
         .name('azbb')
         .description(description.join('\n'))
-        .version('2.0.2')
+        .version('2.0.3')
         .option('-s, --subscription-id <subscription-id>', 'Azure subscription id', validateSubscriptionId)
         .option('-l, --location <location>', 'Azure region in which to create the resource group')
         .option('-g, --resource-group <resource-group>', 'name of the resource group')
